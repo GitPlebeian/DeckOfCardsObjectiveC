@@ -12,6 +12,9 @@
 		86DEAD0D230C8282004B2A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86DEAD0C230C8282004B2A14 /* Assets.xcassets */; };
 		86DEAD10230C8282004B2A14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DEAD0E230C8282004B2A14 /* LaunchScreen.storyboard */; };
 		86DEAD13230C8282004B2A14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DEAD12230C8282004B2A14 /* main.m */; };
+		86DEAD1F230C84D2004B2A14 /* JSTCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DEAD1E230C84D2004B2A14 /* JSTCard.m */; };
+		86DEAD22230C8AEE004B2A14 /* JSTCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DEAD21230C8AEE004B2A14 /* JSTCardController.m */; };
+		86DEAD25230C95A9004B2A14 /* JSTCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DEAD24230C95A9004B2A14 /* JSTCardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,12 @@
 		86DEAD0F230C8282004B2A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86DEAD11230C8282004B2A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86DEAD12230C8282004B2A14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86DEAD1D230C84D2004B2A14 /* JSTCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTCard.h; sourceTree = "<group>"; };
+		86DEAD1E230C84D2004B2A14 /* JSTCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTCard.m; sourceTree = "<group>"; };
+		86DEAD20230C8AEE004B2A14 /* JSTCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTCardController.h; sourceTree = "<group>"; };
+		86DEAD21230C8AEE004B2A14 /* JSTCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTCardController.m; sourceTree = "<group>"; };
+		86DEAD23230C95A9004B2A14 /* JSTCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTCardViewController.h; sourceTree = "<group>"; };
+		86DEAD24230C95A9004B2A14 /* JSTCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTCardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				86DEAD09230C8281004B2A14 /* Main.storyboard */,
+				86DEAD1C230C84B4004B2A14 /* View Controllers */,
+				86DEAD1B230C84AA004B2A14 /* Models */,
+				86DEAD1A230C84A3004B2A14 /* Model Controllers */,
 				86DEAD19230C82EF004B2A14 /* Resources */,
 			);
 			path = deckOfCardsObjectiveC;
@@ -72,6 +84,33 @@
 				86DEAD12230C8282004B2A14 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		86DEAD1A230C84A3004B2A14 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86DEAD20230C8AEE004B2A14 /* JSTCardController.h */,
+				86DEAD21230C8AEE004B2A14 /* JSTCardController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		86DEAD1B230C84AA004B2A14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86DEAD1D230C84D2004B2A14 /* JSTCard.h */,
+				86DEAD1E230C84D2004B2A14 /* JSTCard.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86DEAD1C230C84B4004B2A14 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86DEAD23230C95A9004B2A14 /* JSTCardViewController.h */,
+				86DEAD24230C95A9004B2A14 /* JSTCardViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +139,7 @@
 		86DEACF8230C8281004B2A14 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JST;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Jax Tubbs";
 				TargetAttributes = {
@@ -145,7 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				86DEAD13230C8282004B2A14 /* main.m in Sources */,
+				86DEAD22230C8AEE004B2A14 /* JSTCardController.m in Sources */,
 				86DEAD05230C8281004B2A14 /* AppDelegate.m in Sources */,
+				86DEAD25230C95A9004B2A14 /* JSTCardViewController.m in Sources */,
+				86DEAD1F230C84D2004B2A14 /* JSTCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WP5X762NJ;
-				INFOPLIST_FILE = deckOfCardsObjectiveC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/deckOfCardsObjectiveC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WP5X762NJ;
-				INFOPLIST_FILE = deckOfCardsObjectiveC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/deckOfCardsObjectiveC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
